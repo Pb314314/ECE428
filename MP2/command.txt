@@ -1,0 +1,11 @@
+python mp1_node.py node1 8080 node1_config.txt    
+
+python mp1_node.py node2 8081 node2_config.txt    
+
+python mp1_node.py node3 8082 node3_config.txt    
+
+python -u gentx.py 0.5 | python mp1_node.py node1 8080 node1_config.txt    
+
+python -u gentx.py 0.5 | python mp1_node.py node2 8081 node2_config.txt    
+
+python -u gentx.py 0.5 | python mp1_node.py node3 8082 node3_config.txt    
